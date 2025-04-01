@@ -1,0 +1,52 @@
+body{
+    margin-left: 15px;
+    background-color: #3F7D58;
+}
+.chat{
+    background-color: rgb(196, 222, 245);
+    padding: 15px;
+    display: inline-block;
+    border-radius: 12px;
+    margin: 20px 9px
+}
+h2{
+    text-align: center;
+}
+.msg{
+    font-weight: bolder;
+}
+.newchat{
+    display: flex;
+    margin: auto;
+    padding: 9px 28px;
+    outline: none;
+    border: none;
+    border-radius: 28px;
+    background-color:#f38d40;
+    font-size: 15px;
+}
+.time{
+    display: flex;
+    margin-bottom: -20px;
+}
+#t{
+    margin-left: 4px;
+}
+#edit{
+        padding: 6px 10px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color:#3F7D58;
+        color: white;
+        font-size: 12px;
+}
+#edit:hover{
+    color:black;
+}
+.btns{
+    display: flex;
+}
+.del{
+    margin-left: 5px;
+}

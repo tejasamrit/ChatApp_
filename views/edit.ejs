@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit your message</title>
+    <style>
+        body{
+            background-color: #3F7D58;
+            color: aliceblue;
+        }
+        h2{
+            text-align: center;
+            text-decoration: underline;
+            color: black;
+        }
+        .editdata{
+            text-align: center;
+            height: 280px;
+            padding-top: 8px;
+        }
+        textarea{
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin-top: -8px;
+        }
+        button{
+            background-color: #EC5228;
+            padding: 9px 14px;
+            display: flex;
+            margin: auto;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            margin-bottom: 5px;
+        }
+        button:hover{
+            zoom: 1.2;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Edit your message</h2>
+    <div class="editdata">
+    <p>ID :  <%=chat._id%></p>
+    <p>Sender : <%=chat.from%> </p>
+    <p>Receiver : <%=chat.to%></p>
+    <br>
+    <form method="POST" action="/chats/<%= chat._id %>?_method=PUT">
+        <textarea name="msg" rows="5" cols="35"><%=chat.msg %></textarea>
+        <br><br>
+        <button>Edit</button>
+    </form>
+</div>
+
+</body>
+</html>
